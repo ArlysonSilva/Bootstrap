@@ -5,13 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brincando com Bootstrap</title>
-    <link hel="stylesheet" href="" https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
+    <div class="container">
+        <h2>Exemplo do uso de Carrossel de imagens</h2>
+        <div id="myCarrossel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarrossel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarrossel" data-slide-to="1"></li>
+                <li data-target="#myCarrossel" data-slide-to="2"></li>
+                <li data-target="#myCarrossel" data-slide-to="3"></li>
+                <li data-target="#myCarrossel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="1.jpg" alt="Kombi 1" style="width: 100%;">
+                </div>
+                <div class="item">
+                    <img src="2.jpg" alt="Kombi 2" style="width: 100%;">
+                </div>
+                <div class="item">
+                    <img src="3.jpg" alt="Kombi 3" style="width: 100%;">
+                </div>
+                <div class="item">
+                    <img src="4.jpg" alt="Kombi 4" style="width: 100%;">
+                </div>
+                <div class="item">
+                    <img src="5.jpg" alt="Kombi 5" style="width: 100%;">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarrossel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarrossel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>
